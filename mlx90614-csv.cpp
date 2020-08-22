@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
 			throw "need exactly two arguments: <i2c bus device> <location>";
 
 		using namespace mlx90614;
-		::mlx90614::DEBUG = true;
+		::mlx90614::DEBUG = false;
 
 		TMLX90614 mlx90614(argv[1], 0x5a);
 
